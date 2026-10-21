@@ -279,14 +279,14 @@ table.t tfoot td,table.t tfoot th{font-weight:800;color:var(--ink);background:va
 .closing .in{padding:32px;display:grid;gap:14px;align-content:center}
 .closing h2{color:#fff!important;margin:0!important}
 .closing p{color:#d6d9e8}
-.closing .photo{height:100%;margin:0;position:relative}
-.closing .photo img{border-radius:0;height:100%;min-height:300px;aspect-ratio:auto;object-position:30% 50%}
-.closing .photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:10px 14px;background:linear-gradient(transparent,rgba(15,23,43,.75));color:#e5e7f5}
+.closing .photo{display:block;margin:0;position:relative;min-height:320px}
+.closing .photo img{position:absolute;inset:0;width:100%;height:100%;border-radius:0;aspect-ratio:auto;object-fit:cover;object-position:30% 60%}
+.closing .photo figcaption{position:absolute;left:0;right:0;top:0;padding:12px 16px 28px;background:linear-gradient(rgba(15,23,43,.7),transparent);color:#fff}
 .closing .photo .credit{color:#c9cde0}
 .closing .kicker{font:800 .75rem/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--ic-lilac)}
 .closing .btn{background:#fff;color:var(--ic-purple);border-color:#fff;justify-self:start}
 .closing .btn:hover{background:var(--ic-tint)}
-@media (max-width:860px){.closing{grid-template-columns:1fr}.closing .photo img{aspect-ratio:3/2;min-height:0}.closing .in{padding:26px 22px}}
+@media (max-width:860px){.closing{grid-template-columns:1fr}.closing .photo{min-height:0}.closing .photo img{position:static;height:auto;aspect-ratio:3/2;object-position:50% 50%}.closing .in{padding:26px 22px}}
 
 /* related + sources */
 .related{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
@@ -4273,12 +4273,12 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <figcaption><span>Day 1: Basilica Cistern</span><span class="credit">Fatih Ekmekçibaşı / <a href="https://www.pexels.com/photo/historic-basilica-cistern-in-istanbul-turkiye-30380766/">Pexels</a></span></figcaption>
 </figure>
 <figure class="photo g">
-<img alt="Marble pool and arcaded pavilion in a Topkapı Palace courtyard" decoding="async" height="600" loading="lazy" sizes="(max-width:760px) 50vw, 260px" src="topkapi-900.webp" srcset="topkapi-600.webp 600w, topkapi-900.webp 900w" width="900"/>
-<figcaption><span>Day 2: Topkapı Palace</span><span class="credit">Abdullah Öğük / <a href="https://www.pexels.com/photo/historic-ottoman-architecture-at-topkapi-palace-30035559/">Pexels</a></span></figcaption>
+<img alt="The Gate of Salutation at Topkapı Palace, with its two pointed towers" decoding="async" height="600" loading="lazy" sizes="(max-width:760px) 50vw, 260px" src="topkapi-900.webp" srcset="topkapi-600.webp 600w, topkapi-900.webp 900w" width="900"/>
+<figcaption><span>Day 2: Topkapı Palace</span><span class="credit">Mehmet Turgut Kirkgoz / <a href="https://www.pexels.com/photo/topkapi-palace-istanbul-with-turkish-flag-35799569/">Pexels</a></span></figcaption>
 </figure>
 <figure class="photo g">
-<img alt="A ferry crossing the Bosphorus at sunset, with the Old City skyline behind" decoding="async" height="600" loading="lazy" sizes="(max-width:760px) 50vw, 260px" src="ferry-900.webp" srcset="ferry-600.webp 600w, ferry-900.webp 900w" width="900"/>
-<figcaption><span>Day 3: the Bosphorus at dusk</span><span class="credit">Tuğçe Ayten / <a href="https://www.pexels.com/photo/istanbul-landscape-with-bosphorus-at-sunset-31256089/">Pexels</a></span></figcaption>
+<img alt="The ornate stone gate of Dolmabahçe Palace under a blue sky" decoding="async" height="600" loading="lazy" sizes="(max-width:760px) 50vw, 260px" src="dolmabahce-900.webp" srcset="dolmabahce-600.webp 600w, dolmabahce-900.webp 900w" width="900"/>
+<figcaption><span>Day 3: Dolmabahçe Palace</span><span class="credit">Şinasi Müldür / <a href="https://www.pexels.com/photo/dolmabahce-palace-gate-in-istanbul-turkiye-30632557/">Pexels</a></span></figcaption>
 </figure>
 </div>
 <p class="fine" style="margin-top:8px">From landmark visits to evenings on the Bosphorus.</p>
@@ -4487,7 +4487,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
      "url": "https://istanbul.com/blue-mosque"
     }
    ],
-   "wordCount": 3757,
+   "wordCount": 3756,
    "timeRequired": "PT16M"
   },
   {
