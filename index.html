@@ -105,6 +105,22 @@ body.review .note{display:block}
 .photo.hero img{aspect-ratio:16/9}
 .photo.wide img{aspect-ratio:16/9}
 .photo.g img{aspect-ratio:3/2;border-radius:14px}
+.photo.r32 img{aspect-ratio:3/2}
+.photo.guest img{aspect-ratio:4/5}
+.photo.guest a{display:block}
+.photo.app .app-bg{background:linear-gradient(160deg,var(--ic-tint),var(--ic-tint-2));border-radius:16px;padding:18px 14px 0;overflow:hidden}
+.photo.app img{border-radius:0;background:transparent;aspect-ratio:1000/846}
+/* support card (replaces a screenshot slot; real contact details only, no mock chat) */
+.support-card{margin:18px 0 0;max-width:560px;border-radius:16px;background:#0b6b3a;color:#e9f7ef;padding:22px 24px;display:grid;gap:10px}
+.support-card .sc-kicker{display:flex;align-items:center;gap:10px;font:800 .78rem/1.3 var(--font-body);letter-spacing:.07em;text-transform:uppercase;color:#c6f0d6}
+.support-card .sc-kicker svg{width:22px;height:22px;flex:none}
+.support-card .sc-num{font:700 clamp(1.5rem,3.4vw,1.9rem)/1.15 var(--font-heading);color:#fff;font-variant-numeric:tabular-nums}
+.support-card .sc-sub{font-size:.98rem;line-height:1.5;color:#e9f7ef}
+.support-card dl{margin:4px 0 0;display:grid;gap:6px;border-top:1px solid rgba(255,255,255,.2);padding-top:12px}
+.support-card dl div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px;font-size:.94rem}
+.support-card dt{font:800 .75rem/1.6 var(--font-body);letter-spacing:.06em;text-transform:uppercase;color:#c6f0d6}
+.support-card dd{margin:0;color:#fff;overflow-wrap:anywhere}
+@media (max-width:420px){.support-card{padding:18px}.support-card dl div{grid-template-columns:1fr;gap:0}}
 @media (max-width:640px){.photo.hero img{aspect-ratio:4/5}.photo img{border-radius:12px}}
 .ar-16x9{--ar:16/9}.ar-3x2{--ar:3/2}.ar-4x5{--ar:4/5}.ar-9x16{--ar:9/16}.ar-1x1{--ar:1/1}
 @media (max-width:640px){.ar-16x9.m-4x5{--ar:4/5}.ph-what{font-size:.95rem}.ph-alt{font-size:.78rem}}
@@ -228,7 +244,7 @@ table.t tfoot td,table.t tfoot th{font-weight:800;color:var(--ink);background:va
 .rev-list blockquote{margin:0;font:600 1.12rem/1.45 var(--font-heading);color:var(--ink)}
 .rev-list cite{font-style:normal;font-size:.9rem;color:var(--muted)}
 .rev-list cite b{color:var(--text)}
-@media (max-width:860px){.reviews{grid-template-columns:1fr}.reviews .ph{max-width:420px}}
+@media (max-width:860px){.reviews{grid-template-columns:1fr}.reviews .photo{max-width:340px}}
 .fine{font-size:.9rem;line-height:1.55;color:var(--muted)}
 
 /* comparison + savings */
@@ -261,8 +277,8 @@ table.t tfoot td,table.t tfoot th{font-weight:800;color:var(--ink);background:va
 .steps b{font:700 1.08rem/1.35 var(--font-heading);color:var(--ink)}
 .steps span{font-size:.98rem;line-height:1.55}
 .steps em{font-style:normal;color:var(--muted)}
-.how-grid{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:28px;align-items:start}
-@media (max-width:760px){.how-grid{grid-template-columns:1fr}.how-grid .ph{max-width:240px}}
+.how-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start}
+@media (max-width:860px){.how-grid{grid-template-columns:1fr}.how-grid .photo{max-width:460px}}
 
 /* gallery */
 .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}
@@ -275,6 +291,7 @@ table.t tfoot td,table.t tfoot th{font-weight:800;color:var(--ink);background:va
 .faq .qa h3{margin:0 0 8px;font-size:1.2rem}
 
 /* closing */
+.article>section.closing{padding-top:0}
 .closing{margin-top:56px;border-radius:20px;overflow:hidden;background:var(--ink);color:#e5e7f5;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch}
 .closing .in{padding:32px;display:grid;gap:14px;align-content:center}
 .closing h2{color:#fff!important;margin:0!important}
@@ -3970,7 +3987,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <p class="lead">Istanbul can fill your wish list before you even arrive. A morning exploring the courtyards of Topkapı Palace, a walk beneath the domes of Hagia Sophia, an evening watching the shoreline light up from the Bosphorus. The question is how to bring those experiences together, and still leave room for the city to surprise you.</p>
 <div class="byline">
 <span aria-hidden="true" class="avatar">ist</span>
-<span class="who"><b>istanbul.com Editor</b><span>Published <time datetime="2025-10-01">1 October 2025</time> · Updated <time datetime="2026-10-21">21 October 2026</time> · 16 min read</span></span>
+<span class="who"><b>istanbul.com Editor</b><span>Published <time datetime="2025-10-01">1 October 2025</time> · Updated <time datetime="2026-10-21">21 October 2026</time> · 17 min read</span></span>
 </div>
 <p class="disclosure"><b>About this guide:</b> Istanbul Tourist Pass® is part of the istanbul.com brand family. This guide uses published product information and identified traveller excerpts. Prices and inclusions were checked on 21 October 2026.</p>
 <p class="note"><b>Not:</b> Yazar adı şu an canlıdaki gibi "istanbul.com Editor". Brif gerçek bir editör adı istiyor (E-E-A-T); isim gelince byline ve şemadaki author birlikte değişecek. Yayın tarihi canlı sayfanın ilk yayın tarihi (1 Ekim 2025); "Updated" sadece esaslı güncellemede değişmeli. Canlı şemada dateModified her gün otomatik güncelleniyor (20 Ekim 03:00), bu düzeltilmeli.</p>
@@ -4056,14 +4073,9 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <div>
 <p>These are selected Day Pass examples from the current catalogue of 120+ attractions and experiences. For Flexi, choose from the experiences offered in its own builder. The wider catalogue also contains discounted extras, so check whether each activity is <span class="badge b-inc">Included</span> or <span class="badge b-disc">Discounted</span> before you plan around it.</p>
 </div>
-<figure class="ph" data-photo="P2">
-<div aria-label="Photo placeholder P2: guided group" class="ph-box ar-3x2" role="img">
-<svg aria-hidden="true"><use href="#i-cam"></use></svg>
-<span class="ph-tag">Photo P2 · 3:2</span>
-<span class="ph-what">A real guided group at one of the listed landmarks, showing a service the pass actually provides.</span>
-<span class="ph-alt">Alt example (only if true for the photo): "Guide speaking to visitors outside Topkapı Palace".</span>
-</div>
-<figcaption>Discover the stories behind the sights.</figcaption>
+<figure class="photo r32" data-photo="P2">
+<img alt="A guide holding an Istanbul Tourist Pass flag leads a walking group in Sultanahmet" decoding="async" height="600" loading="lazy" sizes="(max-width:860px) 100vw, 360px" src="guided-900.webp" srcset="guided-600.webp 600w, guided-900.webp 900w" width="900"/>
+<figcaption><span>The 90-minute Historic Peninsula walk with a licensed guide, included in Day Pass.</span><span class="credit">Photo: <a href="https://istanbultouristpass.com/istanbul-historic-peninsula-walking-tour">Istanbul Tourist Pass</a></span></figcaption>
 </figure>
 </div>
 <div class="tbl">
@@ -4081,6 +4093,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 </tbody>
 </table>
 </div>
+<p class="note"><b>Not:</b> Rehberli grup fotoğrafı istanbultouristpass.com/istanbul-historic-peninsula-walking-tour ürün galerisinden (dahil olan, lisanslı rehberli 90 dakikalık yürüyüş; ürün sayfası "Your guide will be waiting at the meeting point carrying a white flag" diyor). Uygulama görseli /download-app sayfasındaki "itp-phones-cropped" görseli. İkisi de şirketin kendi sitesinde yayında; orijinal dosyaları ekipten alınmalı.</p>
 <p class="note"><b>Not:</b> Tabloya "Without pass" fiyat sütununu ekledim (brifte yok). Hepsi istanbultouristpass.com/whats-included'da 21 Ekim'de "Included with pass" olarak listeleniyor ve fiyatlar oradan. Galata Kulesi bilerek yok: katalogda "€40 without pass, €30 Discounted with pass" yazıyor, yani dahil değil indirimli. Canlıdaki eski makale Galata'yı dahil gibi anlatıyor; brifin de dediği gibi ürün ekibi tek doğruyu onaylamalı.</p>
 </section>
 <section aria-labelledby="formats-h" id="formats">
@@ -4117,14 +4130,9 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <h2 id="travellers-h">What travellers have appreciated</h2>
 <p>The short comments below, displayed on the Istanbul Tourist Pass® purchase page, highlight three practical parts of the experience: organising visits, enjoying a guide and getting help when needed. They are individual experiences, rather than a promise of how every trip will feel.</p>
 <div class="reviews">
-<figure class="ph" data-photo="P3">
-<div aria-label="Photo placeholder P3: traveller photo" class="ph-box ar-4x5" role="img">
-<svg aria-hidden="true"><use href="#i-cam"></use></svg>
-<span class="ph-tag">Photo P3 · 4:5 or 1:1</span>
-<span class="ph-what">A real guest photo or short video used with permission.</span>
-<span class="ph-alt">Never a stock or AI face presented as a reviewer. Alt: the real scene, no guessing who people are.</span>
-</div>
-<figcaption>Istanbul through our travellers' eyes.</figcaption>
+<figure class="photo guest" data-photo="P3">
+<a href="https://istanbultouristpass.com/reviews"><img alt="Two travellers smiling in front of Hagia Sophia" decoding="async" height="480" loading="lazy" src="guest-384.webp" width="384"/></a>
+<figcaption><span>Kiran &amp; Priiya from India at Hagia Sophia, in their video review.</span><span class="credit"><a href="https://istanbultouristpass.com/reviews">Watch traveller videos</a></span></figcaption>
 </figure>
 <ul class="rev-list">
 <li><span class="topic">Organising visits</span><blockquote>"saves a lot of time and energy"</blockquote><cite><b>Suzanne Low</b> · Google</cite></li>
@@ -4133,6 +4141,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 </ul>
 </div>
 <p class="fine" style="margin-top:12px">These excerpts are reproduced from the seller's page; their original platform dates have not been independently verified for this guide. <a href="https://istanbultouristpass.com/reviews">Read more traveller experiences</a></p>
+<p class="note"><b>Not:</b> Fotoğraf: istanbultouristpass.com/reviews sayfasındaki "Kiran &amp; Priiya from India" müşteri videosunun karesi (YouTube 2z6kM2Y5GPc). Karenin çözünürlüğü düşük (384×480); yayından önce ekipten videonun orijinal dosyasını ve bu kişilerin istanbul.com'da kullanım iznini almak gerekiyor. Yandaki üç alıntı başka kişilere ait, altyazı bunu karıştırmayacak şekilde yazıldı.</p>
 <p class="note"><b>Not:</b> Üç alıntı ve atıflar istanbultouristpass.com/istanbul-pass'teki yorum kartlarıyla birebir kontrol edildi (Suzanne Low · Google, Fabrice_25 · Tripadvisor, mihai s · Tripadvisor). Brif gereği: yayında her alıntıya orijinal yorum linki ve gerçek tarih eklenmeli; tarih yoksa uydurulmayacak. Platform puanları birleştirilip tek ortalama gösterilmeyecek; o yüzden /reviews sayfasındaki "4.8 / 5 from 10K+ reviews" ifadesini buraya almadım.</p>
 </section>
 <section aria-labelledby="day-or-flexi-h" id="day-or-flexi">
@@ -4220,14 +4229,9 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <li><b>Check before setting out</b><span>Read the meeting point, entry instructions and current opening information. <em>You arrive knowing where to go and what to show.</em></span></li>
 <li><b>Enjoy the visit</b><span>Use the QR code or meeting procedure specified for that experience. <em>Each visit follows its own published entry process.</em></span></li>
 </ol>
-<figure class="ph" data-photo="P4">
-<div aria-label="Photo placeholder P4: app screens" class="ph-box ar-9x16" role="img">
-<svg aria-hidden="true"><use href="#i-cam"></use></svg>
-<span class="ph-tag">Photo P4 · 9:16</span>
-<span class="ph-what">Current app screens: pass, reservation and audio guide.</span>
-<span class="ph-alt">Hide personal data and live QR codes. Alt: "Istanbul Tourist Pass app showing [actual screen]".</span>
-</div>
-<figcaption>Your visits, organised in one app.</figcaption>
+<figure class="photo app" data-photo="P4">
+<div class="app-bg"><img alt="The Istanbul Tourist Pass app on three phones, showing discounted offers, quick actions and a support button" decoding="async" height="846" loading="lazy" sizes="(max-width:860px) 100vw, 340px" src="app-1000.webp" srcset="app-600.webp 600w, app-1000.webp 1000w" width="1000"/></div>
+<figcaption><span>Your visits, organised in one app.</span><span class="credit">Image: <a href="https://istanbultouristpass.com/download-app">Istanbul Tourist Pass</a></span></figcaption>
 </figure>
 </div>
 <h3 id="app">Keep the details together, then get on with your day</h3>
@@ -4240,15 +4244,16 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <h2 id="support-h">A local team when you need a hand</h2>
 <div class="flow">
 <p>Questions often become very practical once you arrive: where exactly is the meeting point, or which instruction applies to your visit? The provider advertises 24/7 WhatsApp support, giving you a place to ask. Istanbul Tourist Pass® launched in 2014 and is sold by Cityberry Travel Agency, TÜRSAB member No. 11745. <a href="https://istanbultouristpass.com/about-us">About the operator</a></p>
-<figure class="ph" data-photo="P9" style="max-width:300px">
-<div aria-label="Photo placeholder P9: support screenshot" class="ph-box ar-4x5" role="img">
-<svg aria-hidden="true"><use href="#i-cam"></use></svg>
-<span class="ph-tag">Photo P9 · 4:5 · screenshot</span>
-<span class="ph-what">A real WhatsApp support exchange: a traveller's question about a meeting point and the team's reply.</span>
-<span class="ph-alt">Hide names, numbers and booking IDs. Alt: "WhatsApp chat in which the support team explains [actual question]".</span>
-</div>
-<figcaption>Help on WhatsApp, day or night.</figcaption>
-</figure>
+<aside aria-label="Istanbul Tourist Pass support contacts" class="support-card">
+<p class="sc-kicker"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 19.5l1.2-3.6A8 8 0 1 1 8.4 19z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="M9 10.5h6M9 13.5h4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>WhatsApp support · 24 hours, 7 days</p>
+<p class="sc-num"><span class="nw">+90 530 385 20 26</span></p>
+<p class="sc-sub">Ask about a meeting point, a reservation or a change of plan, before or during your trip.</p>
+<dl>
+<div><dt>Phone</dt><dd><span class="nw">+90 850 304 8726</span>, 7 days a week, 9:00 to 18:00 Istanbul time</dd></div>
+<div><dt>Messenger</dt><dd>m.me/istanbultouristpass</dd></div>
+</dl>
+</aside>
+<p class="note"><b>Not:</b> Buradaki ekran görüntüsü alanını kaldırıp yerine gerçek iletişim bilgilerini koydum; uydurma bir WhatsApp konuşması yapmadım. Kaynaklar: "WhatsApp support 24/7" (istanbultouristpass.com/about-us), "+90 530 385 20 26", "+90 850 304 8726" ve "7 days a week between 9am and 6pm (Istanbul time)" (/contact). Ekip gerçek, izinli ve kişisel bilgileri gizlenmiş bir ekran görüntüsü verirse kartın yanına eklenebilir.</p>
 <p>The combination of entry details, visit guidance and access to support is part of what you are comparing alongside the price. For a first trip to a new city, that organisation can be an appealing part of the package.</p>
 </div>
 </section>
@@ -4487,8 +4492,8 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
      "url": "https://istanbul.com/blue-mosque"
     }
    ],
-   "wordCount": 3756,
-   "timeRequired": "PT16M"
+   "wordCount": 3845,
+   "timeRequired": "PT17M"
   },
   {
    "@type": "BreadcrumbList",
