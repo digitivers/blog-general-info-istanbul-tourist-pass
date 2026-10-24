@@ -76,6 +76,14 @@ body.review .note{display:block}
 .post-head>*{max-width:880px}
 .post-head h1{font-size:clamp(2.1rem,4.2vw,2.875rem);line-height:1.15;font-weight:600;color:var(--ink)}
 .lead{font-size:clamp(1.1rem,1.6vw,1.25rem);line-height:1.6;color:var(--text)}
+.intro{display:grid;gap:14px;max-width:760px}
+.intro p{font-size:clamp(1.06rem,1.45vw,1.15rem);line-height:1.68;color:var(--text)}
+.intro strong,.short-answer strong{color:var(--ink);font-weight:800}
+.short-answer p{font-size:1.06rem;line-height:1.68}
+.glance{margin-top:6px}
+.save-chart .val small.more{color:#9a3412}
+.plan-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.plan-h span{font:800 .75rem/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--ic-purple)}
 .byline{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin-top:4px}
 .avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#8b3dff,var(--ic-purple));color:#fff;display:grid;place-items:center;font:700 1.05rem/1 var(--font-heading)}
 .byline .who{display:grid;gap:2px}
@@ -3984,19 +3992,24 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <article>
 <header class="wrap post-head">
 <h1>Istanbul Tourist Pass® Review: Is It Worth It?</h1>
-<p class="lead">Istanbul can fill your wish list before you even arrive. A morning exploring the courtyards of Topkapı Palace, a walk beneath the domes of Hagia Sophia, an evening watching the shoreline light up from the Bosphorus. The question is how to bring those experiences together, and still leave room for the city to surprise you.</p>
 <div class="byline">
 <span aria-hidden="true" class="avatar">ist</span>
-<span class="who"><b>istanbul.com Editor</b><span>Published <time datetime="2025-10-01">1 October 2025</time> · Updated <time datetime="2026-10-21">21 October 2026</time> · 17 min read</span></span>
+<span class="who"><b>istanbul.com Editor</b><span>Published <time datetime="2025-10-01">1 October 2025</time> · Updated <time datetime="2026-10-23">23 October 2026</time> · 18 min read</span></span>
 </div>
-<p class="disclosure"><b>About this guide:</b> Istanbul Tourist Pass® is part of the istanbul.com brand family. This guide uses published product information and identified traveller excerpts. Prices and inclusions were checked on 21 October 2026.</p>
+<div class="intro">
+<p>Your Istanbul trip starts long before you arrive. You picture yourself wandering through the courtyards of Topkapı Palace, discovering the stories behind Hagia Sophia and watching the city lights shimmer across the Bosphorus. Soon, your wish list becomes a practical question: how can you bring these experiences together, make your budget go further and still leave time to simply enjoy being here?</p>
+<p><strong>Istanbul Tourist Pass®</strong> can help those plans fall into place. It brings attraction visits, guided experiences, cruises and cultural activities into a digital pass, with two options to match the way you like to travel. Having your chosen visits and their practical details together means less time searching through separate bookings and more attention to the days you are looking forward to.</p>
+<p>If you enjoy making the most of every sightseeing day, <strong>Day Pass</strong> gives you access to its included experiences over your chosen consecutive days. You might explore a palace in the morning, discover somewhere new after lunch and spend the evening on the water. If your ideal holiday revolves around a few favourites, <strong>Flexi Pass</strong> lets you choose those experiences and enjoy them within five days from first use, leaving room for long lunches, neighbourhood walks and unexpected discoveries.</p>
+<p>The right choice can make a real difference to both your spending and the pace of your holiday. Below, we compare <strong>Day Pass</strong> and <strong>Flexi</strong> through two different sightseeing plans, show the costs with and without a pass, and explain what each experience includes. Along the way, you will find traveller comments and a suggested three-day itinerary to help you decide which option feels like your kind of Istanbul.</p>
+</div>
+<p class="disclosure"><b>About this guide:</b> Istanbul Tourist Pass® is part of the istanbul.com brand family. This guide uses published product information and identified traveller excerpts. Prices and inclusions were checked on 23 October 2026.</p>
 <p class="note"><b>Not:</b> Yazar adı şu an canlıdaki gibi "istanbul.com Editor". Brif gerçek bir editör adı istiyor (E-E-A-T); isim gelince byline ve şemadaki author birlikte değişecek. Yayın tarihi canlı sayfanın ilk yayın tarihi (1 Ekim 2025); "Updated" sadece esaslı güncellemede değişmeli. Canlı şemada dateModified her gün otomatik güncelleniyor (20 Ekim 03:00), bu düzeltilmeli.</p>
 </header>
 <div class="wrap">
 <figure class="photo hero" data-photo="P1">
 <picture>
-<source height="1000" media="(max-width:640px)" srcset="hero-m-800.webp" width="800"/>
-<img alt="Old City rooftops, a two-minaret mosque and ferries on the Bosphorus at golden hour" decoding="async" fetchpriority="high" height="900" sizes="(max-width:1280px) 100vw, 1184px" src="hero-1600.webp" srcset="hero-960.webp 960w, hero-1600.webp 1600w" width="1600"/>
+<source height="1000" media="(max-width:640px)" sizes="calc(100vw - 32px)" srcset="hero-m-800.webp 800w, hero-m-1200.webp 1200w" width="800"/>
+<img alt="Old City rooftops, a two-minaret mosque and ferries on the Bosphorus at golden hour" decoding="async" fetchpriority="high" height="900" sizes="(max-width:1280px) 100vw, 1184px" src="hero-1600.webp" srcset="hero-960.webp 960w, hero-1600.webp 1600w, hero-2400.webp 2400w" width="1600"/>
 </picture>
 <figcaption><span>Plan the Istanbul you want to experience.</span><span class="credit">Photo: Ahmet Çuhadar / <a href="https://www.pexels.com/photo/scenic-view-of-istanbul-with-bosphorus-bridge-29862261/">Pexels</a></span></figcaption>
 </figure>
@@ -4004,56 +4017,14 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <div class="wrap layout">
 <div class="article">
 <section aria-labelledby="worth-it-h" id="worth-it">
-<h2 id="worth-it-h">Is Istanbul Tourist Pass® worth it?</h2>
-<div class="answer">
-<p class="kicker">The short answer</p>
-<p>Istanbul Tourist Pass® can be worth it if your chosen experiences cost more separately than the pass, and you have time to enjoy them. Day Pass works particularly well for several visits over consecutive sightseeing days. Flexi Pass suits a personal shortlist spread over its five-day validity period. The right choice starts with what you want to experience.</p>
-<dl class="facts">
-<div><dt>What it is</dt><dd>A digital sightseeing pass for Istanbul, in two versions: Day Pass and Flexi Pass</dd></div>
-<div><dt>Day Pass</dt><dd>1 to 7 consecutive calendar days<small>€149 (1 day) to €299 (7 days) per adult</small></dd></div>
-<div><dt>Flexi Pass</dt><dd>Build your own selection from 80+ experiences<small>Price follows your selection; up to 40% below separate prices</small></dd></div>
-<div><dt>Validity</dt><dd>Day Pass: chosen days, to 23:59 on the last day<small>Flexi Pass: 5 days from first use</small></dd></div>
-<div><dt>Catalogue</dt><dd>120+ attractions and experiences on Day Pass<small>Guided tours, hosted entries, audio guides, cruises, shows</small></dd></div>
-<div><dt>Example saving</dt><dd>6 experiences: €280 separately, €189 with a 2-day Day Pass<small>€91 less, about 33%, if all six fit into two days</small></dd></div>
-<div><dt>Sold by</dt><dd>Cityberry Travel Agency, TÜRSAB member No. 11745<small>Launched in 2014; part of the istanbul.com brand family</small></dd></div>
-<div><dt>Help</dt><dd>WhatsApp support 24/7<small>Audio guides in 25 languages</small></dd></div>
-</dl>
-<p class="checked">Prices per adult in euros, checked on istanbultouristpass.com on 21 October 2026. They may change.</p>
+<h2 id="worth-it-h">Is Istanbul Tourist Pass® worth it for your trip?</h2>
+<div class="flow short-answer">
+<p>If you are planning several paid sights and experiences, <strong>Istanbul Tourist Pass®</strong> can help your budget go further while bringing your visits together in one digital pass. The best value comes from choosing the option that fits the places you want to see and the pace you will enjoy.</p>
+<p><strong>Day Pass</strong> suits fuller sightseeing days, with room to add more included experiences along the way. <strong>Flexi Pass</strong> suits a few carefully chosen favourites, with five days from first use to enjoy your selection.</p>
+<p>Below, two real-price examples show how each option can work for a different kind of holiday, so you can see what you could save and which pass feels right for you.</p>
 </div>
-<p class="note"><b>Not:</b> Bu "kısa cevap + künye" kutusu brifte yok; GEO için ekledim. Arama motorları ve yapay zeka asistanları sayfadan en çok bu tür, kendi başına okunabilen cevap ve olgu bloklarını alıntılıyor. Her satır istanbultouristpass.com'da 21 Ekim 2026'da kontrol edildi: fiyatlar /istanbul-pass, "80+" ve "up to 40%" /flexi-pass, 23:59 kuralı SSS, 120+ /whats-included, satıcı ve 2014 /about-us.</p>
-<div class="fit">
-<div class="yes">
-<h3><span aria-hidden="true">✓</span>A good fit if you…</h3>
-<ul>
-<li>plan several paid visits over consecutive sightseeing days</li>
-<li>want guided tours, audio guides and entry details in one app</li>
-<li>are visiting for the first time and would like WhatsApp help on hand</li>
-<li>have a shortlist of must-sees and want time between them (Flexi Pass)</li>
-</ul>
-</div>
-<div class="no">
-<h3><span aria-hidden="true">!</span>Compare other options if you…</h3>
-<ul>
-<li>only want one paid attraction: a single ticket may cost less</li>
-<li>mainly want museum admission: compare MuseumPass İstanbul</li>
-<li>need public transport covered: ordinary journeys are not included</li>
-<li>can only fit one visit a day into a long stay: price your visits one by one</li>
-</ul>
-</div>
-</div>
-<p class="note"><b>Not:</b> "Kime uygun / kim başka seçeneğe baksın" bloğu rakip analizinden aldığım fikir; yapay zeka asistanları "best for / not for" listelerini çok sık alıntılıyor. Maddelerin hepsi brifteki cümlelerden türetildi (tek bilet karşılaştırması, MuseumPass ayrımı, ulaşımın dahil olmaması, ardışık günler).</p>
-<div class="tbl">
-<table class="t stack">
-<caption>Which option fits your trip?<small>A quick way to choose before you compare prices</small></caption>
-<thead><tr><th scope="col">If your trip sounds like this…</th><th scope="col">Start here</th></tr></thead>
-<tbody>
-<tr><th data-label="Your trip" scope="row"><span class="cv">"We want to make the most of our sightseeing days."</span></th><td data-label="Start here"><span class="cv"><strong>Day Pass:</strong> choose 1 to 7 consecutive calendar days.</span></td></tr>
-<tr><th data-label="Your trip" scope="row"><span class="cv">"We know our must-sees and want time between them."</span></th><td data-label="Start here"><span class="cv"><strong>Flexi Pass:</strong> choose your experiences; use them within 5 days from first use.</span></td></tr>
-<tr><th data-label="Your trip" scope="row"><span class="cv">"We would like to know what we could actually save."</span></th><td data-label="Start here"><span class="cv">See the <a href="#savings">six-experience comparison</a> below, then price your own shortlist.</span></td></tr>
-</tbody>
-</table>
-</div>
-<div class="cta-row"><a class="btn" href="https://istanbultouristpass.com/istanbul-pass">Explore Day Pass and Flexi options</a></div>
+<div class="cta-row"><a class="btn btn-ghost" href="#savings">See the two examples</a></div>
+<p class="note"><b>Not:</b> Giriş (dört paragraf) ve bu kısa cevap yönetimin 23 Ekim'de verdiği metin, kelimesi kelimesine. Eski "kısa cevap + künye" kutusu ile "kime uygun" kutusu silinmedi, aşağıya "Day Pass or Flexi Pass" bölümünün sonuna "At a glance" olarak taşındı. "Which option fits your trip?" tablosu kaldırıldı; aynı bilgi bu metinde ve aşağıdaki karşılaştırma tablosunda var. Metin "iki gerçek fiyatlı örnek" dediği için tasarruf bölümüne Plan B eklendi.</p>
 </section>
 <section aria-labelledby="picture-h" id="picture">
 <h2 id="picture-h">Picture the Istanbul you came to see</h2>
@@ -4061,7 +4032,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <p>Perhaps you want to see as much as possible during a short break. Perhaps you have a few must-see places in mind, with long lunches and neighbourhood walks in between. Istanbul Tourist Pass® gives you two ways to shape that trip: a <a href="https://istanbultouristpass.com/istanbul-pass">Day Pass</a> for fuller sightseeing days, or a <a href="https://istanbultouristpass.com/flexi-pass">Flexi Pass</a> built around the experiences you choose.</p>
 <p>Think of your first morning in the Old City. <a href="https://istanbul.com/hagia-sophia">Hagia Sophia</a>, the <a href="https://istanbul.com/blue-mosque">Blue Mosque</a> and the <a href="https://istanbul.com/basilica-cistern">Basilica Cistern</a> are all part of the same historic neighbourhood, yet each opens a very different window onto Istanbul. A guided visit can help you connect those places with the stories behind them, turning a list of landmarks into a day that makes sense.</p>
 <figure class="photo wide">
-<img alt="Hagia Sophia seen across the fountain in Sultanahmet Square" decoding="async" height="800" loading="lazy" sizes="(max-width:1024px) 100vw, 780px" src="oldcity-1200.webp" srcset="oldcity-800.webp 800w, oldcity-1200.webp 1200w" width="1200"/>
+<img alt="Hagia Sophia seen across the fountain in Sultanahmet Square" decoding="async" height="800" loading="lazy" sizes="(max-width:1024px) 100vw, 780px" src="oldcity-1200.webp" srcset="oldcity-800.webp 800w, oldcity-1200.webp 1200w, oldcity-1600.webp 1600w" width="1200"/>
 <figcaption><span>Hagia Sophia from Sultanahmet Square, a short walk from the Blue Mosque and the Basilica Cistern.</span><span class="credit">Photo: Rahmi Aksöz / <a href="https://www.pexels.com/photo/white-concrete-building-under-blue-sky-7777444/">Pexels</a></span></figcaption>
 </figure>
 <p>That is one of the useful things about Istanbul Tourist Pass®: the catalogue includes different ways to experience the city. Some visits come with a live guide; others pair entry with an audio guide so you can explore at your own pace. An evening cruise can give your trip an entirely different rhythm.</p>
@@ -4071,10 +4042,10 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <h2 id="included-h">What is included in Istanbul Tourist Pass®?</h2>
 <div class="with-fig">
 <div>
-<p>These are selected Day Pass examples from the current catalogue of 120+ attractions and experiences. For Flexi, choose from the experiences offered in its own builder. The wider catalogue also contains discounted extras, so check whether each activity is <span class="badge b-inc">Included</span> or <span class="badge b-disc">Discounted</span> before you plan around it.</p>
+<p>These are selected Day Pass examples from the current catalogue of 120+ attractions and experiences. Together, the included Day Pass experiences add up to more than €1,600 in published prices. For Flexi, choose from the experiences offered in its own builder. The wider catalogue also contains discounted extras, so check whether each activity is <span class="badge b-inc">Included</span> or <span class="badge b-disc">Discounted</span> before you plan around it.</p>
 </div>
 <figure class="photo r32" data-photo="P2">
-<img alt="A guide holding an Istanbul Tourist Pass flag leads a walking group in Sultanahmet" decoding="async" height="600" loading="lazy" sizes="(max-width:860px) 100vw, 360px" src="guided-900.webp" srcset="guided-600.webp 600w, guided-900.webp 900w" width="900"/>
+<img alt="A guide holding an Istanbul Tourist Pass flag leads a walking group in Sultanahmet" decoding="async" height="600" loading="lazy" sizes="(max-width:860px) 100vw, 360px" src="guided-900.webp" srcset="guided-600.webp 600w, guided-900.webp 900w, guided-1050.webp 1050w" width="900"/>
 <figcaption><span>The 90-minute Historic Peninsula walk with a licensed guide, included in Day Pass.</span><span class="credit">Photo: <a href="https://istanbultouristpass.com/istanbul-historic-peninsula-walking-tour">Istanbul Tourist Pass</a></span></figcaption>
 </figure>
 </div>
@@ -4093,6 +4064,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 </tbody>
 </table>
 </div>
+<p class="note"><b>Not:</b> Toplam fiyat cümlesi: istanbultouristpass.com/whats-included'da 23 Ekim 2026 itibarıyla 85 deneyim "Included with pass"; bunların 78'inde "without pass" fiyatı yazıyor ve toplamı €1.663. Kalan 7'sinde fiyat yok (Vialand, Sapphire, 4 Flyzone, WhatsApp destek), bu yüzden "more than €1,600" yazıldı. Yönetimin isteğiyle pass fiyatıyla karşılaştırılmıyor ve fair usage limit'ten bahsedilmiyor.</p>
 <p class="note"><b>Not:</b> Rehberli grup fotoğrafı istanbultouristpass.com/istanbul-historic-peninsula-walking-tour ürün galerisinden (dahil olan, lisanslı rehberli 90 dakikalık yürüyüş; ürün sayfası "Your guide will be waiting at the meeting point carrying a white flag" diyor). Uygulama görseli /download-app sayfasındaki "itp-phones-cropped" görseli. İkisi de şirketin kendi sitesinde yayında; orijinal dosyaları ekipten alınmalı.</p>
 <p class="note"><b>Not:</b> Tabloya "Without pass" fiyat sütununu ekledim (brifte yok). Hepsi istanbultouristpass.com/whats-included'da 21 Ekim'de "Included with pass" olarak listeleniyor ve fiyatlar oradan. Galata Kulesi bilerek yok: katalogda "€40 without pass, €30 Discounted with pass" yazıyor, yani dahil değil indirimli. Canlıdaki eski makale Galata'yı dahil gibi anlatıyor; brifin de dediği gibi ürün ekibi tek doğruyu onaylamalı.</p>
 </section>
@@ -4111,7 +4083,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <p>Your favourite memory of Istanbul may be a palace courtyard. It may also be the coffee you learned to make, a colourful street you wandered down or the view from the water after a busy day. The pass catalogue gives you ways to build that variety into your trip.</p>
 <div class="tbl">
 <table class="t stack">
-<caption>Smaller experiences on Day Pass<small>All listed as included on the catalogue page, 21 October 2026</small></caption>
+<caption>Smaller experiences on Day Pass<small>All listed as included on the catalogue page, 23 October 2026</small></caption>
 <thead><tr><th scope="col">When you feel like…</th><th scope="col">A listed Day Pass experience</th><th scope="col">A way to make it part of your trip</th></tr></thead>
 <tbody>
 <tr><th data-label="You feel like" scope="row"><span class="cv">Trying something local</span></th><td data-label="Experience"><span class="cv">Sand-brewed Turkish coffee workshop</span></td><td data-label="Make it fit"><span class="cv">Take a hands-on break between Old City visits.</span></td></tr>
@@ -4171,14 +4143,51 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 </table>
 </div>
 <p style="margin-top:14px">If you only want one paid attraction, compare a single ticket too. The aim is to find the option that makes your plans work well, at a price you are happy with.</p>
+<h3 id="at-a-glance">Istanbul Tourist Pass® at a glance</h3>
+<div class="answer glance">
+<dl class="facts">
+<div><dt>What it is</dt><dd>A digital sightseeing pass for Istanbul, in two versions: Day Pass and Flexi Pass</dd></div>
+<div><dt>Day Pass</dt><dd>1 to 7 consecutive calendar days<small>€149 (1 day) to €299 (7 days) per adult</small></dd></div>
+<div><dt>Flexi Pass</dt><dd>Build your own selection from 80+ experiences<small>Price follows your selection; up to 40% below separate prices</small></dd></div>
+<div><dt>Validity</dt><dd>Day Pass: chosen days, to 23:59 on the last day<small>Flexi Pass: 5 days from first use</small></dd></div>
+<div><dt>Catalogue</dt><dd>120+ attractions and experiences on Day Pass<small>Guided tours, hosted entries, audio guides, cruises, shows</small></dd></div>
+<div><dt>Example savings</dt><dd>Plan A: 6 experiences in 2 days, €280 separately, €189 with Day Pass<small>Plan B: 4 favourites over 5 days, €204 separately, €168 with Flexi Pass</small></dd></div>
+<div><dt>Sold by</dt><dd>Cityberry Travel Agency, TÜRSAB member No. 11745<small>Launched in 2014; part of the istanbul.com brand family</small></dd></div>
+<div><dt>Help</dt><dd>WhatsApp support 24/7<small>Audio guides in 25 languages</small></dd></div>
+</dl>
+<p class="checked">Prices per adult in euros, checked on istanbultouristpass.com on 23 October 2026. They may change.</p>
+</div>
+<div class="fit">
+<div class="yes">
+<h3><span aria-hidden="true">✓</span>A good fit if you…</h3>
+<ul>
+<li>plan several paid visits over consecutive sightseeing days</li>
+<li>want guided tours, audio guides and entry details in one app</li>
+<li>are visiting for the first time and would like WhatsApp help on hand</li>
+<li>have a shortlist of must-sees and want time between them (Flexi Pass)</li>
+</ul>
+</div>
+<div class="no">
+<h3><span aria-hidden="true">!</span>Compare other options if you…</h3>
+<ul>
+<li>only want one paid attraction: a single ticket may cost less</li>
+<li>mainly want museum admission: compare MuseumPass İstanbul</li>
+<li>need public transport covered: ordinary journeys are not included</li>
+<li>can only fit one visit a day into a long stay: price your visits one by one</li>
+</ul>
+</div>
+</div>
+<p class="note"><b>Not:</b> "Kime uygun / kim başka seçeneğe baksın" bloğu rakip analizinden aldığım fikir; yapay zeka asistanları "best for / not for" listelerini çok sık alıntılıyor. Maddelerin hepsi brifteki cümlelerden türetildi (tek bilet karşılaştırması, MuseumPass ayrımı, ulaşımın dahil olmaması, ardışık günler).</p>
+<p class="note"><b>Not:</b> Bu künye kutusu önceden kapak görselinin hemen altındaydı; yönetimin "sayfa teknik bir tabloyla başlıyor" geri bildirimi üzerine buraya taşındı. Yapay zeka asistanları bu fiyat ve süre satırlarını sayfanın neresinde olursa olsun okuyor. Her satır istanbultouristpass.com'da 23 Ekim 2026'da yeniden kontrol edildi.</p>
 <div class="cta-row"><a class="btn" href="https://istanbultouristpass.com/istanbul-pass">Build and compare your pass options</a></div>
 </section>
 <section aria-labelledby="savings-h" id="savings">
 <h2 id="savings-h">What could Istanbul Tourist Pass® save you?</h2>
-<p>A useful savings example should look like a trip you might actually take. Here is a six-experience shortlist combining well-known sights with an evening cruise. The figures compare the published experience prices, including the stated visit formats, not museum admission alone.</p>
+<p>A useful savings example should look like a trip you might actually take. Here are two: a full two-day programme for <strong>Day Pass</strong>, and a short list of favourites for <strong>Flexi Pass</strong>. The figures compare the published experience prices, including the stated visit formats, not museum admission alone.</p>
+<h3 class="plan-h" id="plan-a"><span>Plan A · Day Pass</span>Six experiences in two full days</h3>
 <div class="tbl">
 <table class="t stack">
-<caption>Six experiences, priced three ways<small>One adult, euros, checked 21 October 2026</small></caption>
+<caption>Six experiences, priced three ways<small>One adult, euros, checked 23 October 2026</small></caption>
 <thead><tr><th scope="col">Experience</th><th class="r" scope="col">Published separate price</th><th class="r" scope="col">Flexi selection price</th></tr></thead>
 <tbody>
 <tr><th scope="row">Hagia Sophia guided visit</th><td class="r" data-label="Separately"><span class="cv">€35</span></td><td class="r" data-label="With Flexi"><span class="cv">€30</span></td></tr>
@@ -4202,6 +4211,30 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <p>Prefer a gentler pace? A three-day Day Pass is €219 in this price snapshot, still €61 below the same €280 total. That gives you another way to weigh the choice: compare the cost with the amount of time you would like to spend at each place.</p>
 <p class="fine">The Blue Mosque amount is for a guided experience; ordinary mosque entry is free. The example assumes each experience is used once and fits the chosen validity period.</p>
 </div>
+<h3 class="plan-h" id="plan-b"><span>Plan B · Flexi Pass</span>Four favourites over a five-day stay</h3>
+<p>Now imagine a slower holiday: four experiences you would not want to miss, with long lunches and free afternoons in between.</p>
+<div class="tbl">
+<table class="t stack">
+<caption>Four favourites, priced three ways<small>One adult, euros, checked 23 October 2026</small></caption>
+<thead><tr><th scope="col">Experience</th><th class="r" scope="col">Published separate price</th><th class="r" scope="col">Flexi selection price</th></tr></thead>
+<tbody>
+<tr><th scope="row">Topkapı Palace experience</th><td class="r" data-label="Separately"><span class="cv">€62</span></td><td class="r" data-label="With Flexi"><span class="cv">€56</span></td></tr>
+<tr><th scope="row">Hagia Sophia guided visit</th><td class="r" data-label="Separately"><span class="cv">€35</span></td><td class="r" data-label="With Flexi"><span class="cv">€30</span></td></tr>
+<tr><th scope="row">Dolmabahçe Palace experience</th><td class="r" data-label="Separately"><span class="cv">€52</span></td><td class="r" data-label="With Flexi"><span class="cv">€42</span></td></tr>
+<tr><th scope="row">Bosphorus dinner cruise</th><td class="r" data-label="Separately"><span class="cv">€55</span></td><td class="r" data-label="With Flexi"><span class="cv">€40</span></td></tr>
+</tbody>
+<tfoot><tr><th scope="row">Total per adult</th><td class="r" data-label="Separately"><span class="cv">€204</span></td><td class="r" data-label="With Flexi"><span class="cv">€168</span></td></tr></tfoot>
+</table>
+</div>
+<ul aria-label="What the same four experiences cost with each option" class="save-chart">
+<li><span class="lab">Booked separately<small>published prices</small></span><span class="track"><span class="bar" style="width:78.8%"></span></span><span class="val">€204</span></li>
+<li><span class="lab">Flexi Pass<small>these four selected</small></span><span class="track"><span class="bar l" style="width:64.9%"></span></span><span class="val">€168<small>€36 less</small></span></li>
+<li><span class="lab">Day Pass, 5 days<small>covering the whole stay</small></span><span class="track"><span class="bar p" style="width:100%"></span></span><span class="val">€259<small class="more">€55 more</small></span></li>
+</ul>
+<div class="flow" style="margin-top:16px">
+<p>For these four favourites, <strong>Flexi Pass</strong> is €36 less than booking separately, about 18%, and you have five days from first use to enjoy them. A five-day <strong>Day Pass</strong> would cost €259, more than the separate total, so for a short list like this Flexi is the better fit.</p>
+</div>
+<p class="note"><b>Not:</b> Plan B fiyatları 23 Ekim 2026'da kontrol edildi: /flexi-pass'te Topkapı "€62 without pass, €56 with pass", Ayasofya rehberli "€35 / €30", Dolmabahçe "€52 / €42", akşam yemekli Boğaz turu "€55 / €40"; 5 günlük Day Pass /istanbul-pass'te "5 Days €259". Toplam 204 − 168 = 36 €, %17,6.</p>
 <h3 id="prices">Day Pass prices at a glance</h3>
 <ul aria-label="Day Pass adult prices by duration" class="prices">
 <li><span class="d">1 day</span><span class="p">€149</span><span class="pd">€149.00 / day</span></li>
@@ -4212,7 +4245,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <li><span class="d">6 days</span><span class="p">€279</span><span class="pd">€46.50 / day</span></li>
 <li><span class="d">7 days</span><span class="p">€299</span><span class="pd">€42.71 / day</span></li>
 </ul>
-<p class="fine" style="margin-top:12px">Adult prices in euros, checked 21 October 2026, and they may change. A 1-day child pass (ages 5 to 12) is €139. Flexi pricing depends on your chosen experiences; check the live total before purchase.</p>
+<p class="fine" style="margin-top:12px">Adult prices in euros, checked 23 October 2026, and they may change. A 1-day child pass (ages 5 to 12) is €139. Flexi pricing depends on your chosen experiences; check the live total before purchase.</p>
 <p class="note"><b>Not:</b> Fiyatlar /istanbul-pass'te 21 Ekim'de birebir aynı: "1 Day €149 2 Days €189 3 Days €219 4 Days €239 … 5 Days €259 6 Days €279 7 Days €299". Çocuk fiyatı aynı sayfada "Children (5–12) ( €139 per person )" olarak 1 gün seçiliyken görünüyor; diğer sürelerin çocuk fiyatını görmediğim için sadece 1 günü yazdım. Günlük fiyat sütunu benim eklediğim basit bölme (fiyat ÷ gün). Altı deneyim tablosu /whats-included ve /flexi-pass fiyatlarıyla, toplamlar /compare-passes ile aynı.</p>
 <h3 id="personal">Make the calculation personal</h3>
 <p>Write down your must-sees, compare the same visit formats and add up only what you expect to use. Then compare that total with Day Pass and Flexi. Any saving is more meaningful when it comes from experiences you already wanted, not extra stops added simply to make the numbers look better.</p>
@@ -4274,15 +4307,15 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <p style="margin-top:14px">This is an itinerary idea, not a guaranteed bookable schedule. It also differs from the two-day savings example: the optional Whirling Dervishes show is an extra experience to consider. A Day Pass can suit this fuller programme; with Flexi, select the experiences you want from its available catalogue.</p>
 <div class="gallery">
 <figure class="photo g">
-<img alt="Rows of lit columns reflected in the water of the Basilica Cistern" decoding="async" height="600" loading="lazy" sizes="(max-width:760px) 100vw, 260px" src="cistern-900.webp" srcset="cistern-600.webp 600w, cistern-900.webp 900w" width="900"/>
+<img alt="Rows of lit columns reflected in the water of the Basilica Cistern" decoding="async" height="600" loading="lazy" sizes="(max-width:760px) 100vw, 260px" src="cistern-900.webp" srcset="cistern-600.webp 600w, cistern-900.webp 900w, cistern-1400.webp 1400w" width="900"/>
 <figcaption><span>Day 1: Basilica Cistern</span><span class="credit">Fatih Ekmekçibaşı / <a href="https://www.pexels.com/photo/historic-basilica-cistern-in-istanbul-turkiye-30380766/">Pexels</a></span></figcaption>
 </figure>
 <figure class="photo g">
-<img alt="The Gate of Salutation at Topkapı Palace, with its two pointed towers" decoding="async" height="600" loading="lazy" sizes="(max-width:760px) 50vw, 260px" src="topkapi-900.webp" srcset="topkapi-600.webp 600w, topkapi-900.webp 900w" width="900"/>
+<img alt="The Gate of Salutation at Topkapı Palace, with its two pointed towers" decoding="async" height="600" loading="lazy" sizes="(max-width:760px) 50vw, 260px" src="topkapi-900.webp" srcset="topkapi-600.webp 600w, topkapi-900.webp 900w, topkapi-1200.webp 1200w" width="900"/>
 <figcaption><span>Day 2: Topkapı Palace</span><span class="credit">Mehmet Turgut Kirkgoz / <a href="https://www.pexels.com/photo/topkapi-palace-istanbul-with-turkish-flag-35799569/">Pexels</a></span></figcaption>
 </figure>
 <figure class="photo g">
-<img alt="The ornate stone gate of Dolmabahçe Palace under a blue sky" decoding="async" height="600" loading="lazy" sizes="(max-width:760px) 50vw, 260px" src="dolmabahce-900.webp" srcset="dolmabahce-600.webp 600w, dolmabahce-900.webp 900w" width="900"/>
+<img alt="The ornate stone gate of Dolmabahçe Palace under a blue sky" decoding="async" height="600" loading="lazy" sizes="(max-width:760px) 50vw, 260px" src="dolmabahce-900.webp" srcset="dolmabahce-600.webp 600w, dolmabahce-900.webp 900w, dolmabahce-1200.webp 1200w" width="900"/>
 <figcaption><span>Day 3: Dolmabahçe Palace</span><span class="credit">Şinasi Müldür / <a href="https://www.pexels.com/photo/dolmabahce-palace-gate-in-istanbul-turkiye-30632557/">Pexels</a></span></figcaption>
 </figure>
 </div>
@@ -4305,7 +4338,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 </div>
 <div class="tbl">
 <table class="t stack">
-<caption>Getting there and around<small>Transport listings in the Day Pass catalogue, one adult, 21 October 2026</small></caption>
+<caption>Getting there and around<small>Transport listings in the Day Pass catalogue, one adult, 23 October 2026</small></caption>
 <thead><tr><th scope="col">Listing</th><th scope="col">With Day Pass</th><th class="r" scope="col">Without pass</th></tr></thead>
 <tbody>
 <tr><th scope="row">Istanbul Airport Shuttle</th><td data-label="With Day Pass"><span class="cv"><span class="badge b-inc">Included</span></span></td><td class="r" data-label="Without pass"><span class="cv">€12</span></td></tr>
@@ -4322,7 +4355,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <h2 id="faq-h">Your Istanbul Tourist Pass® questions, answered</h2>
 <div id="faq-list">
 <div class="qa"><h3>What is Istanbul Tourist Pass®?</h3><p>Istanbul Tourist Pass® is a digital Istanbul city pass combining selected attraction visits and experiences. Day Pass gives access to its included catalogue for your chosen consecutive days; Flexi Pass covers the experiences in your purchased selection.</p></div>
-<div class="qa"><h3>How much does Istanbul Tourist Pass® cost?</h3><p>Day Pass costs €149 for 1 day, €189 for 2 days, €219 for 3 days, €239 for 4 days, €259 for 5 days, €279 for 6 days and €299 for 7 days per adult (checked 21 October 2026). A 1-day child pass for ages 5 to 12 is €139. Flexi Pass is priced by the experiences you select, at up to 40% below their separate prices.</p></div>
+<div class="qa"><h3>How much does Istanbul Tourist Pass® cost?</h3><p>Day Pass costs €149 for 1 day, €189 for 2 days, €219 for 3 days, €239 for 4 days, €259 for 5 days, €279 for 6 days and €299 for 7 days per adult (checked 23 October 2026). A 1-day child pass for ages 5 to 12 is €139. Flexi Pass is priced by the experiences you select, at up to 40% below their separate prices.</p></div>
 <div class="qa"><h3>Is Day Pass or Flexi Pass better for a first visit?</h3><p>Day Pass is a useful starting point if you want several major sights and activities over consecutive days. Flexi is worth comparing if you have a smaller shortlist and prefer time between visits. Price the experiences you want and choose a pace you will enjoy.</p></div>
 <div class="qa"><h3>How long is the pass valid?</h3><p>Day Pass is available for 1 to 7 consecutive calendar days from first use, and each day ends at 23:59. Flexi Pass is valid for five days from first use. Check your chosen product's activation instructions before your first visit.</p></div>
 <div class="qa"><h3>Does it include Hagia Sophia, Topkapı Palace and the Basilica Cistern?</h3><p>The current Day Pass catalogue lists experiences at all three. Their formats differ: Hagia Sophia and Basilica Cistern are listed as guided visits, while Topkapı Palace is hosted entry with an audio guide. Check the individual listings for current coverage and reservations; Flexi requires you to select the experiences you want.</p></div>
@@ -4342,7 +4375,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <a class="btn" href="https://istanbultouristpass.com/istanbul-pass">Find the option for your trip</a>
 </div>
 <figure class="photo" data-photo="P8">
-<img alt="The Bosphorus Bridge above Beylerbeyi Palace, with Çamlıca Mosque on the hill behind" decoding="async" height="800" loading="lazy" sizes="(max-width:860px) 100vw, 400px" src="bridge-1200.webp" srcset="bridge-800.webp 800w, bridge-1200.webp 1200w" width="1200"/>
+<img alt="The Bosphorus Bridge above Beylerbeyi Palace, with Çamlıca Mosque on the hill behind" decoding="async" height="800" loading="lazy" sizes="(max-width:860px) 100vw, 400px" src="bridge-1200.webp" srcset="bridge-800.webp 800w, bridge-1200.webp 1200w, bridge-1600.webp 1600w" width="1200"/>
 <figcaption><span>Beylerbeyi Palace is on the Day Pass too.</span><span class="credit">Fatih Ekmen / <a href="https://www.pexels.com/photo/a-suspension-bridge-over-the-river-8648594/">Pexels</a></span></figcaption>
 </figure>
 </section>
@@ -4361,7 +4394,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 </section>
 <section aria-labelledby="sources-h" class="sources" id="sources">
 <h2 id="sources-h">Sources and checks</h2>
-<p>Product information and prices checked on 21 October 2026. See the linked official listings for current terms, availability and prices.</p>
+<p>Product information and prices checked on 23 October 2026. See the linked official listings for current terms, availability and prices.</p>
 <ol>
 <li><a href="https://istanbultouristpass.com/whats-included">Attraction catalogue and prices without pass</a></li>
 <li><a href="https://istanbultouristpass.com/istanbul-pass">Day Pass prices and traveller excerpts</a></li>
@@ -4377,7 +4410,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <span aria-hidden="true" class="avatar">ist</span>
 <div>
 <b>istanbul.com Editorial Team</b>
-<p>istanbul.com has helped travellers plan their time in Istanbul since 1995. For this guide, every price and inclusion was compared with the official listing on 21 October 2026, and the sources are linked above. Last updated <time datetime="2026-10-21">21 October 2026</time>.</p>
+<p>istanbul.com has helped travellers plan their time in Istanbul since 1995. For this guide, every price and inclusion was compared with the official listing on 23 October 2026, and the sources are linked above. Last updated <time datetime="2026-10-23">23 October 2026</time>.</p>
 </div>
 </div>
 <p class="note"><b>Not:</b> Rakibin en güçlü E-E-A-T sinyali bu: şemada isimli bir yazar, "about" sayfası linki ve "her fiyatı resmi kaynaktan kontrol ediyoruz" cümlesi. Bizde isim yerine şimdilik "Editorial Team" var; gerçek editör adı ve kısa biyografisi gelince bu kutu ve şemadaki author Person olarak güncellenmeli.</p>
@@ -4439,7 +4472,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
    "description": "Is Istanbul Tourist Pass worth it? Compare Day Pass and Flexi prices, included attractions, traveller reviews and a clear savings example for your trip.",
    "inLanguage": "en",
    "datePublished": "2025-10-01T15:46:03Z",
-   "dateModified": "2026-10-21",
+   "dateModified": "2026-10-23",
    "author": {
     "@type": "Organization",
     "name": "istanbul.com Editorial Team",
@@ -4492,8 +4525,8 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
      "url": "https://istanbul.com/blue-mosque"
     }
    ],
-   "wordCount": 3845,
-   "timeRequired": "PT17M"
+   "wordCount": 4226,
+   "timeRequired": "PT18M"
   },
   {
    "@type": "BreadcrumbList",
@@ -4553,7 +4586,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
      "name": "How much does Istanbul Tourist Pass® cost?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Day Pass costs €149 for 1 day, €189 for 2 days, €219 for 3 days, €239 for 4 days, €259 for 5 days, €279 for 6 days and €299 for 7 days per adult (checked 21 October 2026). A 1-day child pass for ages 5 to 12 is €139. Flexi Pass is priced by the experiences you select, at up to 40% below their separate prices."
+      "text": "Day Pass costs €149 for 1 day, €189 for 2 days, €219 for 3 days, €239 for 4 days, €259 for 5 days, €279 for 6 days and €299 for 7 days per adult (checked 23 October 2026). A 1-day child pass for ages 5 to 12 is €139. Flexi Pass is priced by the experiences you select, at up to 40% below their separate prices."
      }
     },
     {
