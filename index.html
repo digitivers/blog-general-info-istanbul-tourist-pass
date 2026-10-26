@@ -108,7 +108,7 @@ body.review .note{display:block}
 .photo{margin:0;display:grid;gap:8px;align-content:start}
 .photo img{display:block;width:100%;height:auto;border-radius:16px;object-fit:cover;background:#e9e3f5}
 .photo figcaption{font-size:.9rem;color:var(--muted);line-height:1.45;display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 12px}
-.photo .credit{font-size:.78rem;color:#9ca3af}
+.photo .credit{font-size:.78rem;color:var(--muted)}
 .photo .credit a{color:inherit;font-weight:500;text-decoration-color:currentColor}
 .photo.hero img{aspect-ratio:16/9}
 .photo.wide img{aspect-ratio:16/9}
@@ -177,10 +177,10 @@ body.review .note{display:block}
 .answer>p{font-size:1.125rem;line-height:1.6;color:var(--ink)}
 .facts{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;border-top:1px solid var(--ic-tint-2)}
 .facts div{display:grid;grid-template-columns:132px minmax(0,1fr);gap:12px;padding-block:11px;border-bottom:1px solid var(--ic-tint-2)}
-.facts dt{font:800 .75rem/1.5 var(--font-body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:2px}
+.facts dt{font:800 .75rem/1.5 var(--font-body);letter-spacing:.06em;text-transform:uppercase;color:#4b5563;padding-top:2px}
 .facts dd{margin:0;font-size:.98rem;line-height:1.5;color:var(--ink);font-weight:600;min-width:0}
 .facts dd small{display:block;font-weight:500;color:var(--text);font-size:.88rem}
-.answer .checked{font-size:.84rem;line-height:1.5;color:var(--muted)}
+.answer .checked{font-size:.84rem;line-height:1.5;color:#4b5563}
 @media (max-width:760px){.facts{grid-template-columns:1fr}.facts div{grid-template-columns:116px minmax(0,1fr)}}
 @media (max-width:400px){.facts div{grid-template-columns:1fr;gap:2px}.answer{padding:20px 18px}}
 
@@ -4148,7 +4148,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <dl class="facts">
 <div><dt>What it is</dt><dd>A digital sightseeing pass for Istanbul, in two versions: Day Pass and Flexi Pass</dd></div>
 <div><dt>Day Pass</dt><dd>1 to 7 consecutive calendar days<small>€149 (1 day) to €299 (7 days) per adult</small></dd></div>
-<div><dt>Flexi Pass</dt><dd>Build your own selection from 80+ experiences<small>Price follows your selection; up to 40% below separate prices</small></dd></div>
+<div><dt>Flexi Pass</dt><dd>Build your own selection from 80+ experiences<small>Price follows your selection; up to 50% below separate prices</small></dd></div>
 <div><dt>Validity</dt><dd>Day Pass: chosen days, to 23:59 on the last day<small>Flexi Pass: 5 days from first use</small></dd></div>
 <div><dt>Catalogue</dt><dd>120+ attractions and experiences on Day Pass<small>Guided tours, hosted entries, audio guides, cruises, shows</small></dd></div>
 <div><dt>Example savings</dt><dd>Plan A: 6 experiences in 2 days, €280 separately, €189 with Day Pass<small>Plan B: 4 favourites over 5 days, €204 separately, €168 with Flexi Pass</small></dd></div>
@@ -4215,7 +4215,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <p>Now imagine a slower holiday: four experiences you would not want to miss, with long lunches and free afternoons in between.</p>
 <div class="tbl">
 <table class="t stack">
-<caption>Four favourites, priced three ways<small>One adult, euros, checked 23 October 2026</small></caption>
+<caption>Four favourites, priced two ways<small>One adult, euros, checked 23 October 2026</small></caption>
 <thead><tr><th scope="col">Experience</th><th class="r" scope="col">Published separate price</th><th class="r" scope="col">Flexi selection price</th></tr></thead>
 <tbody>
 <tr><th scope="row">Topkapı Palace experience</th><td class="r" data-label="Separately"><span class="cv">€62</span></td><td class="r" data-label="With Flexi"><span class="cv">€56</span></td></tr>
@@ -4227,14 +4227,13 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 </table>
 </div>
 <ul aria-label="What the same four experiences cost with each option" class="save-chart">
-<li><span class="lab">Booked separately<small>published prices</small></span><span class="track"><span class="bar" style="width:78.8%"></span></span><span class="val">€204</span></li>
-<li><span class="lab">Flexi Pass<small>these four selected</small></span><span class="track"><span class="bar l" style="width:64.9%"></span></span><span class="val">€168<small>€36 less</small></span></li>
-<li><span class="lab">Day Pass, 5 days<small>covering the whole stay</small></span><span class="track"><span class="bar p" style="width:100%"></span></span><span class="val">€259<small class="more">€55 more</small></span></li>
+<li><span class="lab">Booked separately<small>published prices</small></span><span class="track"><span class="bar" style="width:100%"></span></span><span class="val">€204</span></li>
+<li><span class="lab">Flexi Pass<small>these four selected</small></span><span class="track"><span class="bar l" style="width:82.4%"></span></span><span class="val">€168<small>€36 less</small></span></li>
 </ul>
 <div class="flow" style="margin-top:16px">
-<p>For these four favourites, <strong>Flexi Pass</strong> is €36 less than booking separately, about 18%, and you have five days from first use to enjoy them. A five-day <strong>Day Pass</strong> would cost €259, more than the separate total, so for a short list like this Flexi is the better fit.</p>
+<p>For these four favourites, <strong>Flexi Pass</strong> is €36 less than booking separately, about 18%. If your list is longer and your days are fuller, <strong>Day Pass</strong> is the one to compare: in <a href="#plan-a">Plan A</a>, it comes to €91 less than booking separately.</p>
 </div>
-<p class="note"><b>Not:</b> Plan B fiyatları 23 Ekim 2026'da kontrol edildi: /flexi-pass'te Topkapı "€62 without pass, €56 with pass", Ayasofya rehberli "€35 / €30", Dolmabahçe "€52 / €42", akşam yemekli Boğaz turu "€55 / €40"; 5 günlük Day Pass /istanbul-pass'te "5 Days €259". Toplam 204 − 168 = 36 €, %17,6.</p>
+<p class="note"><b>Not:</b> Plan B fiyatları 23 Ekim 2026'da kontrol edildi: /flexi-pass'te Topkapı "€62 without pass, €56 with pass", Ayasofya rehberli "€35 / €30", Dolmabahçe "€52 / €42", akşam yemekli Boğaz turu "€55 / €40". Toplam 204 − 168 = 36 €, %17,6. 25 Ekim: Grafikteki "Day Pass, 5 days €259, €55 more" çubuğu ve "five-day Day Pass would cost €259, more than the separate total" cümlesi kaldırıldı. Sayfada Day Pass'i ayrı biletlerden pahalı gösteren tek yer burasıydı ve 4 deneyim için 5 günlük Day Pass gerçekçi bir seçim değil. Yerine Plan A'daki Day Pass tasarrufuna (€280 → €189, €91) bağlantı verildi. Çubuk genişlikleri en yüksek değere (€204) göre yeniden ölçeklendi.</p>
 <h3 id="prices">Day Pass prices at a glance</h3>
 <ul aria-label="Day Pass adult prices by duration" class="prices">
 <li><span class="d">1 day</span><span class="p">€149</span><span class="pd">€149.00 / day</span></li>
@@ -4355,7 +4354,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
 <h2 id="faq-h">Your Istanbul Tourist Pass® questions, answered</h2>
 <div id="faq-list">
 <div class="qa"><h3>What is Istanbul Tourist Pass®?</h3><p>Istanbul Tourist Pass® is a digital Istanbul city pass combining selected attraction visits and experiences. Day Pass gives access to its included catalogue for your chosen consecutive days; Flexi Pass covers the experiences in your purchased selection.</p></div>
-<div class="qa"><h3>How much does Istanbul Tourist Pass® cost?</h3><p>Day Pass costs €149 for 1 day, €189 for 2 days, €219 for 3 days, €239 for 4 days, €259 for 5 days, €279 for 6 days and €299 for 7 days per adult (checked 23 October 2026). A 1-day child pass for ages 5 to 12 is €139. Flexi Pass is priced by the experiences you select, at up to 40% below their separate prices.</p></div>
+<div class="qa"><h3>How much does Istanbul Tourist Pass® cost?</h3><p>Day Pass costs €149 for 1 day, €189 for 2 days, €219 for 3 days, €239 for 4 days, €259 for 5 days, €279 for 6 days and €299 for 7 days per adult (checked 23 October 2026). A 1-day child pass for ages 5 to 12 is €139. Flexi Pass is priced by the experiences you select, at up to 50% below their separate prices.</p></div>
 <div class="qa"><h3>Is Day Pass or Flexi Pass better for a first visit?</h3><p>Day Pass is a useful starting point if you want several major sights and activities over consecutive days. Flexi is worth comparing if you have a smaller shortlist and prefer time between visits. Price the experiences you want and choose a pace you will enjoy.</p></div>
 <div class="qa"><h3>How long is the pass valid?</h3><p>Day Pass is available for 1 to 7 consecutive calendar days from first use, and each day ends at 23:59. Flexi Pass is valid for five days from first use. Check your chosen product's activation instructions before your first visit.</p></div>
 <div class="qa"><h3>Does it include Hagia Sophia, Topkapı Palace and the Basilica Cistern?</h3><p>The current Day Pass catalogue lists experiences at all three. Their formats differ: Hagia Sophia and Basilica Cistern are listed as guided visits, while Topkapı Palace is hosted entry with an audio guide. Check the individual listings for current coverage and reservations; Flexi requires you to select the experiences you want.</p></div>
@@ -4525,7 +4524,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
      "url": "https://istanbul.com/blue-mosque"
     }
    ],
-   "wordCount": 4226,
+   "wordCount": 4208,
    "timeRequired": "PT18M"
   },
   {
@@ -4586,7 +4585,7 @@ astro-island, astro-slot, astro-static-slot { display: contents; }
      "name": "How much does Istanbul Tourist Pass® cost?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Day Pass costs €149 for 1 day, €189 for 2 days, €219 for 3 days, €239 for 4 days, €259 for 5 days, €279 for 6 days and €299 for 7 days per adult (checked 23 October 2026). A 1-day child pass for ages 5 to 12 is €139. Flexi Pass is priced by the experiences you select, at up to 40% below their separate prices."
+      "text": "Day Pass costs €149 for 1 day, €189 for 2 days, €219 for 3 days, €239 for 4 days, €259 for 5 days, €279 for 6 days and €299 for 7 days per adult (checked 23 October 2026). A 1-day child pass for ages 5 to 12 is €139. Flexi Pass is priced by the experiences you select, at up to 50% below their separate prices."
      }
     },
     {
